@@ -1,0 +1,110 @@
+/* BORDERS TESTING */
+/* main,
+section,
+figure,
+h2,
+.snippet-container,
+.snippet-container p,
+pre,
+code {
+	border: 1px solid red;
+} */
+
+:root {
+	/* COLORS */
+	--link-water-1: rgb(201, 228, 242);
+	--link-water-2: rgb(227, 235, 247);
+	--azure-radiance-1: rgb(17, 132, 246);
+	--azure-radiance-2: rgb(0, 132, 255);
+	--french-pass: rgb(177, 243, 251);
+	--wafer: rgb(226, 213, 210);
+
+	/* MOBILE UNITS */
+	--mobile-em: 0.5em;
+	--mobile-em-2: 0.25em;
+	--mobile-em-3: 0.125em;
+
+	--mobile-font-size-1: 1rem;
+	--mobile-font-size-2: 0.8rem;
+	--mobile-font-size-3: 0.6;
+}
+
+body {
+	background-color: var(--link-water-1);
+	color: var(--azure-radiance-1);
+	font-family: 'Jost', sans-serif;
+}
+
+/* HEADER */
+header {
+	background-color: var(--azure-radiance-2);
+	color: var(--french-pass);
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	width: 100vw;
+}
+
+h1 {
+	border: var(--mobile-em-2) solid var(--wafer);
+	height: fit-content;
+	margin-bottom: var(--mobile-em);
+	padding: var(--mobile-em-3);
+	text-align: left;
+}
+
+.info {
+	background-color: var(--wafer);
+	border-bottom: var(--mobile-em-2) solid var(--azure-radiance-1);
+	color: var(--azure-radiance-1);
+	font-size: 0.8em;
+	padding: var(--mobile-em);
+	text-align: justify;
+}
+
+/* MAIN */
+
+main {
+	margin-top: 1rem;
+	width: 100vw;
+}
+
+.cards-grid {
+	display: grid;
+	row-gap: var(--mobile-em);
+}
+
+.card {
+	border: var(--mobile-em-3) dashed var(--azure-radiance-1);
+	margin: var(--mobile-em);
+	padding: var(--mobile-em);
+	position: relative;
+}
+
+h2 {
+	background-color: var(--wafer);
+	border: var(--mobile-em-2) solid var(--azure-radiance-1);
+	border-radius: var(--mobile-em-2);
+	color: var(--azure-radiance-1);
+	display: inline-block;
+	padding: var(--mobile-em-3);
+	position: absolute;
+	top: -1.25rem;
+	z-index: 1000;
+}
+
+.snippet-container {
+	font-size: var(--mobile-font-size-2);
+	margin-top: var(--mobile-em);
+}
+
+.snippet-container p {
+	margin-bottom: var(--mobile-em-3);
+}
+
+/* PREFROMATED TEXT */
+.language-css {
+	background-color: var(--azure-radiance-1);
+	border-radius: var(--mobile-em-2);
+	color: var(--french-pass);
+	/* display: none; */
+	font-size: xx-small;
+}
